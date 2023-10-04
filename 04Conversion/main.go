@@ -19,6 +19,7 @@ func main() {
 	fmt.Println("You have Enter: ", input)
 	fmt.Printf("type of input is %T \n", input)
 
+	//parsing && triming spaces
 	rating, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
 
 	if err != nil {
