@@ -9,7 +9,9 @@ func main() {
 	var ptr *int
 	fmt.Println("value of pointer :", ptr)
 
+	//var
 	myNumber := 23
+
 	//reference to pointer
 	myPointer := &myNumber
 
