@@ -43,4 +43,6 @@ func main() {
 	//sort pkg sorts string, int etc...
 	sort.Ints(highScores)
 	fmt.Println("sorted values are :", highScores)
+	fmt.Println("is highscores sorted?", sort.IntsAreSorted(highScores))
+
 }
