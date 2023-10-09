@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 
@@ -24,7 +27,7 @@ func main() {
 	codeLangList = append(codeLangList[:3])
 	fmt.Println("final codeLangList values :", codeLangList)
 
-	//make
+	//make need to be define type of data & no of values
 	highScores := make([]int, 4)
 
 	highScores[0] = 25
@@ -32,5 +35,12 @@ func main() {
 	highScores[2] = 34
 	highScores[3] = 99
 
+	//make will gave default allocation of memory; append will reallocate memory
+	highScores = append(highScores, 787, 350, 777)
+
 	fmt.Println("highscores values are :", highScores)
+
+	//sort pkg sorts string, int etc...
+	sort.Ints(highScores)
+	fmt.Println("sorted values are :", highScores)
 }
