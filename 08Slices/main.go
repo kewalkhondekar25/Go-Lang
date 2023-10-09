@@ -23,4 +23,14 @@ func main() {
 
 	codeLangList = append(codeLangList[:3])
 	fmt.Println("final codeLangList values :", codeLangList)
+
+	//make
+	highScores := make([]int, 4)
+
+	highScores[0] = 25
+	highScores[1] = 44
+	highScores[2] = 34
+	highScores[3] = 99
+
+	fmt.Println("highscores values are :", highScores)
 }
