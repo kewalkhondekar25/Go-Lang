@@ -16,7 +16,11 @@ func main() {
 	codeLangList = append(codeLangList, "c", "java")
 	fmt.Println("final codeLangList :", codeLangList)
 
+	//slice the slices
 	//[n:n] starting index to land index which is range non-inclusive
 	codeLangList = append(codeLangList[1:3])
 	fmt.Println("final codeLandList is :", codeLangList)
+
+	codeLangList = append(codeLangList[:3])
+	fmt.Println("final codeLangList values :", codeLangList)
 }
