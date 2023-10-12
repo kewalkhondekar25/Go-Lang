@@ -45,4 +45,11 @@ func main() {
 	fmt.Println("sorted values are :", highScores)
 	fmt.Println("is highscores sorted?", sort.IntsAreSorted(highScores))
 
+	//remove a value from slices
+	var courses = []string{"react", "nextjs", "nodejs", "express"}
+	fmt.Println("values of courses are :", courses)
+
+	var index int = 2
+	courses = append(courses[:index])
+	fmt.Println(courses)
 }
